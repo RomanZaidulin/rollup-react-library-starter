@@ -12,7 +12,8 @@
     "registry": "https://npm.pkg.github.com/MidoAhmed"
   },
   "scripts": {
-    "build": "rimraf dist && rollup -c",
+    "build": "rollup -c",
+    "prepare": "npm run build",
     "dev": "rollup -c -w",
     "test": "jest",
     "lint": "eslint src",
